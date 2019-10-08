@@ -1,4 +1,4 @@
-import { CommonModule, DatePipe } from '@angular/common';
+import { CommonModule } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -14,7 +14,7 @@ import { SomePipe } from './some.pipe';
     CommonModule,
     BrowserModule
   ],
-  providers: [DatePipe, SomePipe],
+  providers: [SomePipe],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
