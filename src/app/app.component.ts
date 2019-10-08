@@ -1,3 +1,4 @@
+import { SomePipe } from './some.pipe';
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,4 +8,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'with-ivy';
+
+  constructor(private somePipe: SomePipe) {
+    console.log(somePipe.transform('x'));
+  }
 }
